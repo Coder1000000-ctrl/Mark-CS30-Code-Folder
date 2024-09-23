@@ -7,7 +7,7 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
-        String message1 = "I am very happy!";
+        String message1 = "I am very Happy!";
         String target1 = "very ";
         int length1 = target1.length();
         int startOne = message1.indexOf(target1);
