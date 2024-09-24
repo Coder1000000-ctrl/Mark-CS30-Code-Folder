@@ -1,6 +1,6 @@
 // Program name: Small Calculator
 // Student name: Mark Tucker
-// Date: Sept.24,2024
+// Date: Sept.24, 2024
 // Program Description: Does two addition sequences.
 
 import java.util.Scanner;
