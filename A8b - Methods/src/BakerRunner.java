@@ -6,7 +6,7 @@
 
 public class BakerRunner {
     public static void main(String[] args) throws Exception {
-        Baker mike = new Baker(); //Creates a new Baker called mike
+        Baker mike = new Baker();
         mike.typesOfBread(); //Outputs many different types of bread
         mike.typesOfDesserts(); //Outputs many different types of desserts
 
