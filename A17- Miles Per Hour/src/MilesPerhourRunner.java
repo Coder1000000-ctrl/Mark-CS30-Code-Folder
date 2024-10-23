@@ -1,5 +1,8 @@
 public class MilesPerhourRunner {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        MilesPerHour miles = new MilesPerHour();
+        int distance = miles.ask("Distance");
+        int hours = miles.ask("Hours");
+        int minutes = miles.ask("Minutes");
     }
 }
