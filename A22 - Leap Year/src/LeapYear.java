@@ -1,7 +1,9 @@
-import java.util.Scanner;
+import java.util.Scanner; // imports a scanner
+
 public class LeapYear {
-    Scanner keys = new Scanner(System.in);
-    // input
+    Scanner keys = new Scanner(System.in); // creates a scanner
+
+    // takes in user input
     public int askYear(){
         System.out.print("Enter a year: ");
         int selectedYear = keys.nextInt();
@@ -9,26 +11,28 @@ public class LeapYear {
 
     }
 
-    // divisble by 4 and not by 100
-    public boolean four(int theYear){
-    int remainder = theYear % 4;
-    if (remainder == 0 && (theYear%100) != 0) {
-        return true;
-    }
-    else{
-        return false;
-    }
-}
-
-    // divisble by 400
-    public boolean fourHundred(int theYear){
-        int remainder = theYear % 400;
-        if (remainder == 0){
+    // checks if the year is a leap year
+    public boolean isLeapYear(int theYear){
+        if ((theYear%4) == 0 && (theYear%100) != 0){
             return true;
         }
-        else{
+        if ((theYear%400) == 0){
+            return true;
+        }
+        else {
             return false;
         }
     }
+    // outputs if it is  leap year or not
+    public void answer(boolean wasItLeap, int theYear){
+        if (wasItLeap == false){
+            System.out.println(theYear + " is NOT a leap year.");
+        }
+        if (wasItLeap == true){
+            System.out.println(theYear + " is a leap year.");
+        }
+    }
+
+    }
     
-}
+
