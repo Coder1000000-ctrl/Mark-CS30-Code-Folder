@@ -1,3 +1,8 @@
+// Program name: Leap Year Calculator
+// Student name: Mark Tucker
+// Date: Oct. 28, 2024
+// Program Description: Calculates if an user input is a leap year
+
 public class LeapYearRunner {
     public static void main(String[] args) throws Exception {
         LeapYear leap = new LeapYear(); // creates abn object called leap
