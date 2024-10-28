@@ -15,6 +15,6 @@ public class TrianglesRunner {
         // calculates area
         surfaceArea = triangle.calculate(sideOne,sideTwo,sideThree);
         // outputs area
-        System.out.println("The area of the trianble is " + surfaceArea +"units.");
+        System.out.println("The area of the trianble is " + surfaceArea +" units.");
     }
 }
