@@ -9,7 +9,7 @@ public class CoolNumbersRunner {
         int number = keys.nextInt();
         int total = cool.countCoolNumbers(number);
         keys.close();
-        System.out.println("There are " + total + " cool numbers in 6-" + number + ".");
+        System.out.println("There are " + total + " cool numbers between 6-" + number + ".");
 
 
 
