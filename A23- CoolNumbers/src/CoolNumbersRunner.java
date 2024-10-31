@@ -9,7 +9,7 @@ public class CoolNumbersRunner {
 
         int userNumber = cool.input(); // takes in input
         int total = cool.countCoolNumbers(userNumber); // calculates the total numbers divisble by 3,4,5, and 6
-        System.out.println("There are " + total + " cool numbers between 6-" + userNumber + "."); // outputs the total
+        System.out.println("There are " + total + " cool numbers between 6 - " + userNumber + "."); // outputs the total
 
 
 
