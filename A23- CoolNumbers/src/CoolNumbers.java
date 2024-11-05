@@ -10,16 +10,16 @@ public class CoolNumbers {
         keys.close();
         return number;
     }
-    public boolean isCoolNum( int checkN ) { // checks if it is a cool number
-        if (checkN%6 == 1 && checkN%5 == 1 && checkN%4 == 1 && checkN%3 == 1){
+    public boolean isCoolNum( int checkUserNum ) { // checks if it is a cool number
+        if (checkUserNum%6 == 1 && checkUserNum%5 == 1 && checkUserNum%4 == 1 && checkUserNum%3 == 1){
             return true;
         }
         else {
             return false;
         }
     }
-    public int countCoolNumbers( int n ){ // checks how many cool numbers there are in a range
-        for (int i=n; i >= 6; i--){
+    public int countCoolNumbers( int userNum ){ // checks how many cool numbers there are in a range
+        for (int i=userNum; i >= 6; i--){
             if(isCoolNum(i)){
                 count++;
             }
