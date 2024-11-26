@@ -23,12 +23,12 @@ public class ArrayRunner {
             int begin =  keys.nextInt();
             System.out.println("Choose a ending number: ");
             int end =  keys.nextInt();
-            System.out.print("The total of numbers" + begin +" - " + end + " is " + method.sum(begin,end));
+            System.out.print("The total of numbers " + begin +" - " + end + " is " + method.sum(begin,end));
     }
     for (int i = 1; i<= 3; i++ ){
     System.out.println("\nWhat number do you want to search for:");
     int number = keys.nextInt();
-    System.out.println(method.countNumbers(number));
+    System.out.println("The total amount of " + number + "'s in the array is " + method.countNumbers(number));
     
 }
 method.removeSeven();

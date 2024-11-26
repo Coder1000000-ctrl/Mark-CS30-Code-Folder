@@ -27,7 +27,7 @@ public class Array {
         int[] newArray = null;
         int length = arrayList.length - countNumbers(7);
         newArray = new int[length];
-        for (int i = 0; i<arrayList.length; i++){
+        for (int i = 0; i<length; i++){
             if (arrayList[i] != 7){
             newArray[i] = arrayList[i];
             }
