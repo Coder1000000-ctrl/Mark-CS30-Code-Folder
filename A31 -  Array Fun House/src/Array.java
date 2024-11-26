@@ -27,12 +27,18 @@ public class Array {
         int[] newArray = null;
         int length = arrayList.length - countNumbers(7);
         newArray = new int[length];
+        int check = 0;
         for (int i = 0; i<length; i++){
+            while (true){
             if (arrayList[i] != 7){
-            newArray[i] = arrayList[i];
+            newArray[check] = arrayList[i];
+            check++;
+            break;
             }
-    
-
+            else {
+                i++;
+            }
+        }
         }
         System.out.println("\n" + Arrays.toString(newArray));
     }
