@@ -41,7 +41,7 @@ public class Array {
         
         }
         System.out.println("\n" + Arrays.toString(newArray));
-        System.out.println("Number of " + takeAway+ "'s = " + countNumbers(7, newArray));
+        System.out.println("Number of " + takeAway+ "'s = " + countNumbers(takeAway, newArray));
     }
 
     
