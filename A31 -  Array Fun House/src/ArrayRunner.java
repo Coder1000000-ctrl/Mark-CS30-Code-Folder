@@ -28,11 +28,14 @@ public class ArrayRunner {
     for (int i = 1; i<= 3; i++ ){
     System.out.println("\nWhat number do you want to search for:");
     int number = keys.nextInt();
-    System.out.println("The total amount of " + number + "'s in the array is " + method.countNumbers(number));
+    System.out.println("The total amount of " + number + "'s in the array is " + method.countNumbers(number, list));
     
 }
-method.removeSeven();
-System.out.println("Number of sevens: " + method.countNumbers(7));
+int remNum = 0;
+System.out.println("What number do you want to remove from the list: ");
+remNum = keys.nextInt();
+method.remove(remNum);
+
         keys.close();
        
 

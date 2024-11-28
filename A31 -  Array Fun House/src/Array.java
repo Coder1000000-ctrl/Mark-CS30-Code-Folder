@@ -14,34 +14,36 @@ public class Array {
         }
         return sum;
     }
-    public  int countNumbers(int search) {
+    public  int countNumbers(int search, int[] searchArray) {
         int count = 0;
-        for (int i= 0; i< arrayList.length; i++) {
-            if (arrayList[i] == search) {
+        for (int i= 0; i< searchArray.length; i++) {
+            if (searchArray[i] == search) {
                 count++;
             }
         }
         return count;
     }
-    public  void removeSeven(){
+    public  void remove(int takeAway){
         int[] newArray = null;
-        int length = arrayList.length - countNumbers(7);
+        int length = arrayList.length - countNumbers(takeAway, arrayList);
         newArray = new int[length];
         int check = 0;
-        for (int i = 0; i<length; i++){
-            while (true){
-            if (arrayList[i] != 7){
+        int i =0;
+            while (i<=length){
+            if (arrayList[i] != takeAway){
             newArray[check] = arrayList[i];
             check++;
-            break;
+            i++;
             }
             else {
                 i++;
             }
-        }
+        
         }
         System.out.println("\n" + Arrays.toString(newArray));
+        System.out.println("Number of " + takeAway+ "'s = " + countNumbers(7, newArray));
     }
+
     
 }
 
