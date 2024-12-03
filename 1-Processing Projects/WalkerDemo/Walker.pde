@@ -2,25 +2,37 @@ class Walker {
     int x,y; //Position Variables
     int size;
     int speed;
+    int cr, cg, cb;
+    boolean npc; //Is this a computer
 
 
     //Constructor
-    Walker(int tempx, int tempy) {
+    Walker(int tempx, int tempy, boolean tempnpc) {
         x = tempx;
         y = tempy;
+        npc = tempnpc; // If true, automate!
         size = 25;
-        speed = 25;
-
+        speed = 10;
+        cr = (int) random(0,255);
+        cg = (int) random(0,255);
+        cb = (int) random(0,255);
     }
 
     void display() {
-        fill (0);
+        fill (cr,cb,cg);
         rect(x,y,size,size); //rect(xpos, ypos, width, height)
 
 
     }
-    //dir 0 = up, 1 = right, 2 = down, 3 = left
+    //dir var ----> 0 = up, 1 = right, 2 = down, 3 = left
     void move(int dir){
+        // Computer Movement
+        if (npc) {
+            dir = (int)random(0,4);
+           
+        }
+
+        //User Movement
         //move Up
         if (dir == 0) {
             y= y - speed;
