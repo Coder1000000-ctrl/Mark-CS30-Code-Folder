@@ -34,20 +34,20 @@ class Walker {
 
         //User Movement
         //move Up
-        if (dir == 0) {
+        if (dir == 0 && y>0) {
             y= y - speed;
         }
         // move right
-        if (dir == 1) {
+        if (dir == 1 && x < width) {
             x = x + speed;
         }
         // move down
-        if (dir == 2) {
+        if (dir == 2 && y < height ) {
             y = y + speed;
             
         }
         //move left
-        if (dir == 3) {
+        if (dir == 3 && x > 0) {
             x= x - speed;
             
         }
