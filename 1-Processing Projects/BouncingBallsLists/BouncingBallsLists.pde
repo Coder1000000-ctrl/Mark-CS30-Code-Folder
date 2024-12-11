@@ -16,8 +16,11 @@ void draw() { // Happens constantly (screen refresh)
      theBall.move();
       // Check against other objects in the group
      for (Ball otherBall : ballGroup){
+       if (theBall != otherBall) {
        theBall.checkCollsion(otherBall);
-     }
+       }
+     
+   }
      theBall.display();
      
     }
